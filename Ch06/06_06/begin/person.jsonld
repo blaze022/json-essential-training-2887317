@@ -1,0 +1,18 @@
+{
+    
+    "@context":{
+        "@vocab":"https://schema.org/Person",
+        "name":"givenName",
+        "sex":"gender",
+        "address":"address",
+        "prize":"gift"
+    },
+    "@type":"Person",
+    "name":"Suhas",
+    "sex":"Male",
+    "address":"somewhere",
+    "prize":"pullitzer"
+
+
+
+}

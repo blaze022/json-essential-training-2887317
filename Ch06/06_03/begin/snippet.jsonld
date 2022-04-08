@@ -1,12 +1,13 @@
 {
-  "@context": {
-    "@vocab": "http://www.schema.org/",
-    "company": "name",
-    "website": "url",
-    "image": "logo",
-    "overview": "description"
+  "@context":{
+    "@vocab":"http://schema.org/",
+    "company":"name",
+    "website":"url",
+    "image":"logo",
+    "overview":"description"
+
   },
-  "@type": "Organization",
+  "@type":"Organization",
   "company": "h+ Sport",
   "website": "https://hplussport.com",
   "image": "https://hplussport.com/wp-content/uploads/2017/04/H-logo_470x271.png",
