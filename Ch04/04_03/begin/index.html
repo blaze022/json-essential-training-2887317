@@ -6,34 +6,57 @@
 <body>
   <script>
     const emptyObject = {};
-    const nonEmptyObject = { apples: "red" };
+    const nonEmptyObject = { apples: "red",num:"12"};
     const stringContent = "banana";
     const numberContent = 5;
     const arrayContent = [ "asparagus", "lettuce", "kale" ];
     const dateContent = new Date();
 
-    const testData = (data) => {
-      for (prop in data) {
-        if (hasOwnProperty === true) {
-          console.log("Not an Empty Object:");
-          return data;
+    let yu=(JSON.stringify(nonEmptyObject))
+    yu=JSON.parse(yu);
+    console.log(typeof(yu.num));
+
+    
+    const testData=(item)=>
+    {
+
+
+      for(prop in item)
+      {
+        if(prop.hasOwnProperty===true)
+        {
+          console.log("Not an empty object")
+          return prop
         }
       }
-      if (JSON.stringify(data) === JSON.stringify({})) {
-        console.log("Empty Object:");
-        return data;
-      } else {
-        console.log("Not an Empty Object:");
-        return data;
+
+        if(JSON.stringify(item)===JSON.stringify({}))
+        {
+          console.log("empty and in if");
+          return item;
+
+        }
+        else{
+          console.log("not empty");
+          return item;
+        }
+      
+
+      /*
+      if(Object.keys(item).length===0 && item.constructor===Object)
+      {
+        console.log("Empty");
+
       }
-      // if (Object.keys(data).length === 0 && data.constructor === Object) {
-      //   console.log("Empty Object:");
-      //   return data;
-      // } else {
-      //   console.log("Not an Empty Object:");
-      //   return data;
-      // }
+      else{
+        console.log("not empty")
+      }
+      return item;
+      */
+    
     }
+
+    
   </script>
 </body>
 </html>

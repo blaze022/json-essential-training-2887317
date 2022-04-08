@@ -1,5 +1,7 @@
 {
   "point": "Mount Everest",
   "volcano": "Ojos del Salado",
-  "glacier": "Khumbu Glacier"
+  "glacier": "Khumbu Glacier",
+  "river":"Nile",
+  "number":100
 }

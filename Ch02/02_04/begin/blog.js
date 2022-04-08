@@ -13,6 +13,7 @@ let posts = [
   }
 ];
 
+let poststr=JSON.stringify(posts);
 // Enter code to stringify the `posts` variable here:
 
 
@@ -21,7 +22,8 @@ let article = {
   title: "Prioritize your health",
   content: "<h2><img class=\"alignright wp-image-382 size-full\" src=\"https://hplussport.com/wp-content/uploads/2016/05/prioritize- your-health-152143703.jpg\" alt=\"Doctor Checking Blood Pressure of a Woman\" width=\"500\" height=\"500\" />Prioritize your health</h2>\r\nAs with many others, you may find it difficult to prioritize your health amongst the many competing demands of a busy lifestyle. That\u0092s why it\u0092s up to you to make the conscious choice to slow down, take inventory on your health, and find ways to make improvements. The first place to start is with your annual physical. One simple visit to your doctor each year can be the most important thing you do for your health, and in most cases, it\u0092s completely covered by insurance. The annual exam can catch health issues, such as diabetes and cancer, in the early stages, giving you a much better chance at beating them down. Make a point of calling your doctor today and putting a wellness visit on your calendar. It\u0092s a great first step to prioritizing your health.",
   date: "2021-12-09 00:53:59" 
-};
+};arts
 
 // Enter code to stringify the `article` variable here:
 
+let artstr=JSON.stringify(article);

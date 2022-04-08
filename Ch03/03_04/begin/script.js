@@ -11,20 +11,23 @@ const data = convertedObject.data.product;
 
 const container = document.querySelector('.container');
 
-const template = (item) => `
-  <div class="item">
+const template = function (item){
+  return(
+  `<div class="item">
     <img src="${item.image}" alt="${item.name}" width="324" height="324">
     <h2>${item.name}</h2>
-  </div>
-`;
+  </div>`)
+};
 
-const populate = (arr) => {
+
+const populate = function (arr) {
   let content = "";
   arr.forEach((item) => {
     content += template(item);
   });
   container.innerHTML += content;
 };
+
 
 document.addEventListener('DOMContentLoaded', () => {
   populate(data);
